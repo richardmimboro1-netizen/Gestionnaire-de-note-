@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Gestionnaire de notes</h1>
+        <p>Calcule la moyenne et le résultat de l'étudiant</p>
+    </header>
+
+    <main>
+
+        <form id="formulaire">
+
+            <div class="champ">
+                <label for="nom">Nom de l'étudiant</label>
+                <input
+                    type="text"
+                    id="nom"
+                    placeholder="Entrez le nom"
+                >
+            </div>
+
+            <div class="champ">
+                <label for="note1">Note 1 /20</label>
+                <input
+                    type="number"
+                    id="note1"
+                    min="0"
+                    max="20"
+                    placeholder="Ex : 15"
+                >
+            </div>
+
+            <div class="champ">
+                <label for="note2">Note 2 /20</label>
+                <input
+                    type="number"
+                    id="note2"
+                    min="0"
+                    max="20"
+                    placeholder="Ex : 12"
+                >
+            </div>
+
+            <div class="champ">
+                <label for="note3">Note 3 /20</label>
+                <input
+                    type="number"
+                    id="note3"
+                    min="0"
+                    max="20"
+                    placeholder="Ex : 14"
+                >
+            </div>
+
+            <button type="submit">
+                Calculer le résultat
+            </button>
+
+            <button type="button" id="reset">
+                Réinitialiser
+            </button>
+
+        </form>
+
+        <div id="resultat"></div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Gestionnaire de notes</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
